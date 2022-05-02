@@ -15,14 +15,14 @@
   <div class="board">
   <div class="sketch"></div>
   <div class="buttons">
-    <button class="blackButton">Black</button>
-    <button class="erasorButton">Erasor</button>
-    <button class="greyButton">Grey</button>
-    <button class="randomButton">Random</button>
-    <button class="resetButton">Reset</button>
+    <button class="blackButton" onclick="changeColor('black')">Black</button>
+    <button class="erasorButton" onclick="changeColor('white')">Erasor</button>
+    <button class="greyButton" onclick="changeColor('grey')">Grey</button>
+    <button class="randomButton" onclick="changeColor('random')">Random</button>
+    <button class="resetButton" onclick="resetButton()">Reset</button>
   </div>
   <div class="input">
-    <input type="text" placeholder="Size of Board" value="16">
+    <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
     <button>Set size</button>
   </div>
   <div class="error">Input must be between 2 and 100</div>
