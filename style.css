@@ -1,0 +1,19 @@
+.sketch{
+    display: grid;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
+
+.sketchpad{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
